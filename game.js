@@ -20,13 +20,13 @@ function stop() {
 function star() {
     level = document.getElementById("level").value;
     if (level === "1") {
-        time = 600;
+        time = 200;
         document.getElementById("level").style.color = "green";
     } else if (level === "2") {
-        time = 300;
+        time = 100;
         document.getElementById("level").style.color = "yellow";
     } else if (level === "3") {
-        time = 100;
+        time = 50;
         document.getElementById("level").style.color = "red";
     } else {
         return alert("Select Level");
