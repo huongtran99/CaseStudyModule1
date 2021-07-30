@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giắn Xăn Mồi</title>
+</head>
+<style>
+    canvas {
+        border: 1px solid red;
+    }
+
+    #score {
+        margin-left: 37%;
+        color: red;
+    }
+
+    label {
+        padding-left: 10%;
+        color: deeppink;
+    }
+
+</style>
+<body>
+
+<span id="score"></span>
+<div style="float: left" id="picture">
+    <canvas id="myCanvas" width="550" height="550"></canvas>
+</div>
+<div>
+    <button style="margin-left: 10%; color: deeppink" onclick="star()">Start</button>
+    <button style="margin-left: 1%; color: red" onclick="stop()">Stop</button> <br> <br>
+    <label> Select Level
+    <select id="level" style="color: deeppink">
+        <option style="color: deeppink">---</option>
+        <option value="1" style="color: green">Easy</option>
+        <option value="2" style="color: yellow">Medium</option>
+        <option value="3" style="color: red">Hard</option>
+    </select>
+    </label>
+</div>
+
+<script src="snake.js"></script>
+<script src="quarry.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
